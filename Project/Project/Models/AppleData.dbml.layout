@@ -70,14 +70,14 @@
         <classShapeMoniker Id="b06b421d-acb4-42c7-9ea9-1c1d920a267e" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(7.125 : 3.5); (7.125 : 2.23442510742187); (8.875 : 2.23442510742187)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(7.125 : 3.5); (7.125 : 2.23442510742187); (8.41666666666667 : 2.23442510742187 : JumpStart); (8.58333333333333 : 2.23442510742187 : JumpEnd); (8.875 : 2.23442510742187)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/AppleDataDataContext/Item/Item_ChiTietDonHang" />
       <nodes>
         <classShapeMoniker Id="80d4c7fe-8949-4903-a6fd-f0da47dd7474" />
         <classShapeMoniker Id="b06b421d-acb4-42c7-9ea9-1c1d920a267e" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(8.125 : 4.81814697265625); (8.875 : 4.81814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(8.125 : 4.81814697265625); (8.41666666666667 : 4.81814697265625 : JumpStart); (8.58333333333333 : 4.81814697265625 : JumpEnd); (8.875 : 4.81814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/AppleDataDataContext/Item/Item_DanhGia" />
       <nodes>
         <classShapeMoniker Id="80d4c7fe-8949-4903-a6fd-f0da47dd7474" />
@@ -105,7 +105,7 @@
         <classShapeMoniker Id="981195b6-2ff7-4b5b-94a0-976e2de7412e" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(3.25 : 8.25564697265625); (8.875 : 8.25564697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(3.25 : 8.25564697265625); (8.41666666666667 : 8.25564697265625 : JumpStart); (8.58333333333333 : 8.25564697265625 : JumpEnd); (8.875 : 8.25564697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/AppleDataDataContext/KhachHang/KhachHang_GioHang" />
       <nodes>
         <classShapeMoniker Id="985926e3-d976-406f-bd7c-5565fdd33beb" />
