@@ -31,7 +31,7 @@
 /*header section*/
 .sub_page .brand_box {
     position: relative;
-    background-image: url(../images/m_business.jpg);
+    background-image: url(images/m_business.jpg);
     padding: 45px 0;
 }
 
@@ -89,7 +89,7 @@ a:focus {
     }
 
         .custom_nav-container .navbar-toggler .navbar-toggler-icon {
-            background-image: url(../images/menu.png);
+            background-image: url(images/menu.png);
             background-size: 42px;
         }
 

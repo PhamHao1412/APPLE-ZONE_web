@@ -73,7 +73,7 @@ body {
 .sub_page {
     .brand_box {
         position: relative;
-        background-image: url(../Content/images/slider-img.jpg);
+        background-image: url(images/slider-img.jpg);
         padding: 45px 0;
     }
 
@@ -122,7 +122,7 @@ body {
             }
 
             .custom_nav-container .navbar-toggler .navbar-toggler-icon {
-                background-image: url(../Content/images/menu.png);
+                background-image: url(images/menu.png);
                 background-size: 42px;
             }
 
@@ -161,14 +161,14 @@ body {
 
                 .carousel-control-prev {
                     border-radius: 0 100% 100% 0;
-                    background-image: url(../Content/images/prev.png);
+                    background-image: url(images/prev.png);
                     left: -50px;
                     background-position: 58px center;
                 }
 
                 .carousel-control-next {
                     border-radius: 100% 0 0 100%;
-                    background-image: url(../Content/images/next.png);
+                    background-image: url(images/next.png);
                     right: -45px;
                     background-position: 20px center;
                 }
@@ -201,7 +201,7 @@ body {
                 }
 
                 .custom_nav-container .nav_search-btn {
-                    background-image: url(../Content/images/search-icon.png);
+                    background-image: url(images/search-icon.png);
                     background-size: 18px;
                     background-repeat: no-repeat;
                     width: 35px;
@@ -451,12 +451,12 @@ body {
                 }
 
                 .carousel-control-prev {
-                    background-image: url(../Content/images/prev.png);
+                    background-image: url(images/prev.png);
                     left: 15%;
                 }
 
                 .carousel-control-next {
-                    background-image: url(../Content/images/next.png);
+                    background-image: url(images/next.png);
                     right: 15%;
                 }
             }
