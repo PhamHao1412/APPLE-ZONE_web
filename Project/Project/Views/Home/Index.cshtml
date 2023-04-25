@@ -97,7 +97,6 @@
                             aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <div class="d-flex flex-column flex-lg-row align-items-center">
                             <ul class="navbar-nav ">
@@ -117,11 +116,9 @@
                                     <a class="nav-link" href="@Url.Action("Contact","Home")">Contact Us</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="@Url.Action("LogIn","Users")">Login</a>
+                                    <a class="nav-link" href="@Html.Partial("~/Views/Shared/LoginPartial.cshtml")">Login</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="@Url.Action("Register","Users")">Register</a>
-                                </li>
+
                                 <li class="nav-item">
                                     <a class="nav-link" href="@Url.Action("Giohang","GioHang")">
                                         <i class="fa fa-shopping-bag shoppingBag"></i>
@@ -231,7 +228,7 @@
                 }
             </div>
         </div>
-    
+        <h2>Mac</h2>
         <div class="container-fluid">
             <div class="store_container">
                 @{
@@ -274,18 +271,18 @@
                     <div class="carousel-item active">
                         <div class="client_container layout_padding-top">
                             <div class="img-box">
-                                <img src="~/Content/images/client-img.png" alt="">
+                                <img src="images/client-img.png" alt="">
                             </div>
                             <div class="detail-box">
                                 <h5>
                                     Khải Lê
                                 </h5>
                                 <p>
-                                    <img src="~/Content/images/left-quote.png" alt="">
+                                    <img src="images/left-quote.png" alt="">
                                     <span>
 
                                     </span>
-                                    <img src="~/Content/images/right-quote.png" alt=""> <br>
+                                    <img src="images/right-quote.png" alt=""> <br>
 
                                 </p>
                             </div>
@@ -294,18 +291,18 @@
                     <div class="carousel-item">
                         <div class="client_container layout_padding-top">
                             <div class="img-box">
-                                <img src="~/Content/images/client-img.png" alt="">
+                                <img src="images/client-img.png" alt="">
                             </div>
                             <div class="detail-box">
                                 <h5>
                                     Hào Phạm
                                 </h5>
                                 <p>
-                                    <img src="~/Content/images/left-quote.png" alt="">
+                                    <img src="images/left-quote.png" alt="">
                                     <span>
 
                                     </span>
-                                    <img src="~/Content/images/right-quote.png" alt=""> <br>
+                                    <img src="images/right-quote.png" alt=""> <br>
 
                                 </p>
                             </div>
@@ -314,18 +311,18 @@
                     <div class="carousel-item">
                         <div class="client_container layout_padding-top">
                             <div class="img-box">
-                                <img src="~/Content/images/client-img.png" alt="">
+                                <img src="images/client-img.png" alt="">
                             </div>
                             <div class="detail-box">
                                 <h5>
                                     Phương Nam
                                 </h5>
                                 <p>
-                                    <img src="~/Content/images/left-quote.png" alt="">
+                                    <img src="images/left-quote.png" alt="">
                                     <span>
 
                                     </span>
-                                    <img src="~/Content/images/right-quote.png" alt=""> <br>
+                                    <img src="images/right-quote.png" alt=""> <br>
 
                                 </p>
                             </div>
