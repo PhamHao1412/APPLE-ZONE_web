@@ -236,6 +236,7 @@
     <Content Include="Content\images\twitter-logo-button.png" />
     <Content Include="Content\images\z4155819468362_bb38f8412c1e082d3176df7b2cb0bded.jpg" />
     <Content Include="Content\jquery-3.4.1.min.js" />
+    <Content Include="Content\js_admin\script.js" />
     <Content Include="Content\LogIn.css" />
     <Content Include="Content\image\admin1.jpg" />
     <Content Include="Content\image\airpodspro-2022.png" />
