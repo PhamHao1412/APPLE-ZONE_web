@@ -127,14 +127,14 @@ a:focus {
 
 .slider_section .carousel-control-prev {
     border-radius: 0 100% 100% 0;
-    background-image: url(../images/prev.png);
+    background-image: url(images/prev.png);
     left: -50px;
     background-position: 58px center;
 }
 
 .slider_section .carousel-control-next {
     border-radius: 100% 0 0 100%;
-    background-image: url(../images/next.png);
+    background-image: url(images/next.png);
     right: -45px;
     background-position: 20px center;
 }
@@ -164,7 +164,7 @@ a:focus {
     }
 
     .nav_section .custom_nav-container .nav_search-btn {
-        background-image: url(../images/search-icon.png);
+        background-image: url(images/search-icon.png);
         background-size: 18px;
         background-repeat: no-repeat;
         width: 35px;
@@ -461,12 +461,12 @@ a:focus {
     }
 
 .client_section .carousel-control-prev {
-    background-image: url(../images/prev.png);
+    background-image: url(images/prev.png);
     left: 15%;
 }
 
 .client_section .carousel-control-next {
-    background-image: url(../images/next.png);
+    background-image: url(images/next.png);
     right: 15%;
 }
 
