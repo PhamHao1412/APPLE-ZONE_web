@@ -100,10 +100,7 @@ body {
             font-weight: bold;
             color: $white;
 
-            text-transform: uppevi a, a:hover, a:focus {
-                text-decoration: none;
-            }
-
+           
             a:hover,
             a:focus {
                 color: initial;
@@ -642,3 +639,6 @@ body {
                 color: #222222;
             }
             /* end footer section*/
+            }
+        }
+    }
