@@ -36,11 +36,6 @@
 }
 
 .sub_page .nav_section {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
     margin-top: 0;
     background-color: #252525;
 }
@@ -511,7 +506,7 @@ a:focus {
         color: #000;
     }
 
-    .contact_section input::-ms-input-placeholder {
+    .contact_section input:-ms-input-placeholder {
         color: #000;
     }
 
@@ -542,7 +537,7 @@ a:focus {
             font-size: 15px;
         }
 
-        .contact_section input::-ms-input-placeholder {
+        .contact_section input:-ms-input-placeholder {
             color: #ac9784;
             text-transform: uppercase;
             font-size: 15px;
@@ -663,7 +658,7 @@ a:focus {
                     opacity: 0.2;
                 }
 
-                .info_section .info_form form input ::-ms-input-placeholder {
+                .info_section .info_form form input :-ms-input-placeholder {
                     color: #ffffff;
                     opacity: 0.2;
                 }
@@ -724,9 +719,6 @@ a:focus {
     .footer_section a {
         color: #222222;
     }
-
-
-
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */

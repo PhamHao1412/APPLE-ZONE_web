@@ -17,5 +17,9 @@ namespace Project.Controllers
         {
             return View();
         }
+        public ActionResult ThongKe()
+        {
+            return View();
+        }
     }
 }
