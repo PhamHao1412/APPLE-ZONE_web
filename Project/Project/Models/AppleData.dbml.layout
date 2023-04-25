@@ -98,14 +98,14 @@
         <classShapeMoniker Id="80d4c7fe-8949-4903-a6fd-f0da47dd7474" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(3.25 : 9.52005126953125); (6.125 : 9.52005126953125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(3.25 : 9.52005126953125); (6.125 : 9.52005126953125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/AppleDataDataContext/KhachHang/KhachHang_DonHang" />
       <nodes>
         <classShapeMoniker Id="985926e3-d976-406f-bd7c-5565fdd33beb" />
         <classShapeMoniker Id="981195b6-2ff7-4b5b-94a0-976e2de7412e" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(3.25 : 8.25564697265625); (8.41666666666667 : 8.25564697265625 : JumpStart); (8.58333333333333 : 8.25564697265625 : JumpEnd); (8.60416666666667 : 8.25564697265625 : JumpStart); (8.77083333333333 : 8.25564697265625 : JumpEnd); (8.875 : 8.25564697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(3.25 : 8.25564697265625); (8.875 : 8.25564697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/AppleDataDataContext/KhachHang/KhachHang_GioHang" />
       <nodes>
         <classShapeMoniker Id="985926e3-d976-406f-bd7c-5565fdd33beb" />
