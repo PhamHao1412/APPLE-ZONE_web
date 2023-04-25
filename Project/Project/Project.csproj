@@ -287,6 +287,7 @@
     <Content Include="Views\DanhMuc\Index.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Admin\Add_Products.cshtml" />
+    <Content Include="Views\Admin\ThongKe.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
