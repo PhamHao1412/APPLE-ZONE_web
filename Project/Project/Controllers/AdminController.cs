@@ -13,5 +13,9 @@ namespace Project.Controllers
         {
             return View();
         }
+        public ActionResult Add_Products()
+        {
+            return View();
+        }
     }
 }
