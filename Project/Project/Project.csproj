@@ -226,7 +226,7 @@
     <Content Include="Content\jquery-3.4.1.min.js" />
     <Content Include="Content\LogIn.css" />
     <Content Include="Content\reponsive.css" />
-    <Content Include="Content\Style.css" />
+    <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />

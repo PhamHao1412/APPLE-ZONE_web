@@ -511,7 +511,7 @@ a:focus {
         color: #000;
     }
 
-    .contact_section input::-ms-input-placeholder {
+    .contact_section input:-ms-input-placeholder {
         color: #000;
     }
 
@@ -542,7 +542,7 @@ a:focus {
             font-size: 15px;
         }
 
-        .contact_section input::-ms-input-placeholder {
+        .contact_section input:-ms-input-placeholder {
             color: #ac9784;
             text-transform: uppercase;
             font-size: 15px;
@@ -663,7 +663,7 @@ a:focus {
                     opacity: 0.2;
                 }
 
-                .info_section .info_form form input ::-ms-input-placeholder {
+                .info_section .info_form form input :-ms-input-placeholder {
                     color: #ffffff;
                     opacity: 0.2;
                 }
