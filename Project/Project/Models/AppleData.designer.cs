@@ -63,7 +63,7 @@ namespace Project.Models
     #endregion
 		
 		public AppleDataDataContext() : 
-				base("Data Source=DERKAISER\\SQLEXPRESS;Initial Catalog=Apple;Integrated Security=True", mappingSource)
+				base("Data Source=KHAILE\\SQLEXPRESS;Initial Catalog=Apple;Integrated Security=True", mappingSource)
 		{
 			OnCreated();
 		}
