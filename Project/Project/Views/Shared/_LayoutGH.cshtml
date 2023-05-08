@@ -40,49 +40,26 @@
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
           crossorigin="anonymous" />
 </head>
-@{
+<body class="sub_page">
 
-}
-<body class="white-bg">
-    <div class="order-success">
-        <i class="fas fa-check-circle"></i>
-        <h2>Đơn hàng đã được xác nhận</h2>
-        <h3>Chúng tôi sẽ giao hàng cho bạn sớm nhất có thể !</h3>
-        <div class="btn-back">
-            <a href="@Url.Action("Store", "Home")" class="back-to-home-button" style="color:white;">Về trang chủ</a>
-        </div>
-    </div>
+
+
+    @{ Html.RenderAction("MenuView", "Home"); }
+    @RenderBody()
+
 </body>
+</html>
+<script src="https://kit.fontawesome.com/28c0af3030.js"
+        crossorigin="anonymous">
 
+</script>
 <style>
-    .white-bg {
-        background-color: white;
+    .sub_page {
+        background-color: #3e3e3f;
     }
-
-    .order-success {
-        padding: 100px;
-        text-align: center;
-        align-items: center;
-        font-size: 15px;
-        font-weight: 500;
-    }
-
-        .order-success i {
-            font-size: 100px;
-            color: #35bb35;
-            margin: 15px;
-        }
-    .btn-back {
-        color: white;
-        margin: auto;
-        width: 200px;
-        height: 30px;
-        background-color: #35bb35;
-        border-radius: 10px;
-        box-shadow: 0 10px 13px rgba(0,0,0,0.25);
-    }
-    .btn-back a{
-        position:relative;
-        top:3px;
+    .collapse {
+        margin: -8px;
     }
 </style>
+
+

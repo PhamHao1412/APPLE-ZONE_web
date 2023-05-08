@@ -36,6 +36,11 @@
 }
 
 .sub_page .nav_section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
     margin-top: 0;
     background-color: #252525;
 }

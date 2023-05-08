@@ -10,6 +10,25 @@ namespace Project.Controllers
     public class HomeController : Controller
     {
         AppleDataDataContext db = new AppleDataDataContext();
+  
+        private int CountProductIDs(int makh)
+        {
+            int count = 0;
+            var gioHangList = db.GioHangs;
+            var idList = gioHangList.Where(g => g.makh == makh).Select(g => g.masp).ToList();
+            count = idList.Distinct().Count();
+            return count;
+        }
+        private decimal Total(int makh)
+        {
+            decimal total = 0;
+            var giohang = db.GioHangs.Where(g => g.makh == makh);
+            if (giohang != null)
+            {
+                total = (giohang?.Sum(g => g.tongtien) ?? 0);
+            }
+            return total;
+        }
         public ActionResult Index()
         {
             ViewBag.iPhone = db.Items.Where(s => s.maloai == 1).Take(4).ToList();
@@ -17,9 +36,9 @@ namespace Project.Controllers
 
             return View(db.Items.ToList());
         }
-
         public ActionResult Store()
         {
+
             ViewBag.iPhone = db.Items.Where(s => s.maloai == 1).Take(4).ToList();
             ViewBag.mac = db.Items.Where(s => s.maloai == 2).Take(4).ToList();
             ViewBag.iPad = db.Items.Where(s => s.maloai == 3).Take(4).ToList();
@@ -28,6 +47,8 @@ namespace Project.Controllers
             return View();
         }    public ActionResult Product_Details(int id)
         {
+            KhachHang kh = (KhachHang)Session["TaiKhoan"];
+
             if (id == null)
             {
                 return RedirectToAction("Index");
@@ -36,11 +57,10 @@ namespace Project.Controllers
             {
                 var item = db.Items.FirstOrDefault(d =>d.ma==id);
                 ViewBag.HinhAnh = db.HinhAnhs.Where(s => s.ma == id).ToList();
+                ViewBag.CountCart = CountProductIDs(kh.makh);
                 return View(item);
             }
         }
-       
-
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -58,9 +78,18 @@ namespace Project.Controllers
         [ChildActionOnly]
         public ActionResult MenuView()
         {
+            KhachHang kh = (KhachHang)Session["TaiKhoan"];
+            if (kh != null) 
+            {
+                ViewBag.CountCart = CountProductIDs(kh.makh);
+                ViewBag.TotalPrice = Total(kh.makh);
+
+            }
             var menu = db.Loais.ToList();
             return PartialView(menu);
         }
+
+
 
     }
 }

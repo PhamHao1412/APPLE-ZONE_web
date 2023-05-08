@@ -266,7 +266,7 @@
     <Content Include="Content\image\macbookpro-m2-13inch.png" />
     <Content Include="Content\image\s.jpg" />
     <Content Include="Content\image\ssd.png" />
-    <Content Include="Content\login\css\main.css" />
+    <Content Include="Content\login\css\login.css" />
     <Content Include="Content\login\css\util.css" />
     <Content Include="Content\login\fonts\font-awesome-4.7.0\css\font-awesome.css" />
     <Content Include="Content\login\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
@@ -296,8 +296,8 @@
     <Content Include="Content\login\vendor\select2\select2.min.css" />
     <Content Include="Content\login\vendor\select2\select2.min.js" />
     <Content Include="Content\login\vendor\tilt\tilt.jquery.min.js" />
-    <Content Include="Content\register\css\main.css" />
     <Content Include="Content\register\css\main.min.css" />
+    <Content Include="Content\register\css\Register.css" />
     <Content Include="Content\register\js\global.js" />
     <Content Include="Content\register\vendor\datepicker\daterangepicker.css" />
     <Content Include="Content\register\vendor\datepicker\daterangepicker.js" />
@@ -314,7 +314,7 @@
     <Content Include="Content\register\vendor\select2\select2.min.css" />
     <Content Include="Content\register\vendor\select2\select2.min.js" />
     <Content Include="Content\reponsive.css" />
-    <Content Include="Content\style.css" />
+    <Content Include="Content\Style.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -447,9 +447,6 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Store.cshtml" />
-    <Content Include="Views\GioHang\GioHang.cshtml" />
-    <Content Include="Views\GioHang\DatHang.cshtml" />
-    <Content Include="Views\GioHang\GioHangTrong.cshtml" />
     <Content Include="Views\GioHang\XacnhanDonHang.cshtml" />
     <Content Include="Views\Users\Register.cshtml" />
     <Content Include="Views\Users\LogIn.cshtml" />
@@ -461,6 +458,9 @@
     <Content Include="Views\Admin\Add_Products.cshtml" />
     <Content Include="Views\Admin\ThongKe.cshtml" />
     <Content Include="Views\Shared\LoginPartial.cshtml" />
+    <Content Include="Views\GioHang\GioHang.cshtml" />
+    <Content Include="Views\GioHang\DatHang.cshtml" />
+    <Content Include="Views\Shared\_LayoutGH.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

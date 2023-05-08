@@ -1,4 +1,6 @@
-﻿@using Project.Models
+﻿
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-4CfUPPxAiAjU/gxp6UPLp6mYJ6U0Onm1x5PRXJD5D5q5B5/5bupcOyP8KthtdNzDbOxyNawZUm/lDkMVxhZVg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+@using Project.Models
 @{
     KhachHang kh = (KhachHang)Session["TaiKhoan"];
     NhanVien nv = (NhanVien)Session["NhanVien"];
@@ -6,39 +8,103 @@
 }
 @if (Session["TaiKhoan"] != null || Session["NhanVien"] != null)
 {
-    <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
+    <div class="dropdown" id="myDropdown">
 
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-               role="button" aria-haspopup="true" aria-
-               expanded="false">
-                @if (nv != null && nv.MaCV == 1)
-                {
-                    <span>Admin: @nv.Ten</span>
-                }
-                else if (nv != null && nv.MaCV == 2)
-                {
-                    <span>Nhân viên: @nv.Ten</span>
+        @*<div class="search">
+            <i class="fa fa-search"></i>
+        </div>*@
 
-                }
-                else
-                {
-                    <span class="name_kh" style="margin-left: 23px; margin-bottom: 20px;">@kh.Ten</span>
-                }
-
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li><a href="@Url.Action("ThongTinKhachHang", "Users")">Thông tin cá nhân</a></li>
-                <li><a>@Html.ActionLink("Lịch sử mua hàng", "LichSuMuaHang", "GioHang")</a></li>
-                <li><a>@Html.ActionLink("Thoát tài khoản", "LogOff", "Users")</a></li>
-            </ul>
-    </ul>
+        @if (nv != null && nv.MaCV == 1)
+        {
+            <span class="dropbtn"> Admin:@nv.Ten</span>
+        }
+        else if (nv != null && nv.MaCV == 2)
+        {
+            <span class="dropbtn"> Nhân viên:@nv.Ten</span>
+        }
+        else
+        {
+            <span class="dropbtn"> @kh.Ten</span>
+        }
+        <i class="fas fa-caret-down" style="color:white"></i>
+        <div class="dropdown-content">
+            <a href="@Url.Action("ThongTinKhachHang", "Users")">Thông tin cá nhân</a>
+            <a href="@Url.Action("LichSuMuaHang", "Users")">Lịch sử mua hàng</a>
+            <a href="@Url.Action("LogOff", "Users")">Đăng xuất</a>
+        </div>
+    </div>
 }
 else
 {
-    <ul class="nav navbar-nav navbar-right">
-        <li>@Html.ActionLink("Đăng Nhập", "LogIn", "Users")</li>
-    </ul>
+@*<ul class="nav navbar-nav navbar-right">
+   
+    <li></li>
+</ul>*@
+
+<div class="dropdown">
+    <a href="@Url.Action("Login", "Users")">Đăng nhập</a>
+</div>
 }
+<script type="text/javascript" src="~/Content/jquery-3.4.1.min.js"></script>
+<script>
+    $(".dropdown").click(function () {
+        $(this).children(".dropdown-content").toggle();
+    });
+
+</script>
+
+<style>
+    .search i {
+        font-size: 20px;
+        color: white;
+    }
+
+    .search{
+        display:inline-block;
+        margin-right:18px;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        left:180px;
+    }
+
+    .dropbtn {
+        background-color: #212529;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown-content {
+        margin: 5px 0 0 -60px;
+        background: #464b50;
+        display: none;
+        position: absolute;
+        border-radius: 8px;
+        text-align: center;
+        z-index: 1;
+    }
+
+        .dropdown-content a {
+            color: black;
+            width: 130px;
+            padding: 12px 16px;
+            font-size: 11px;
+            text-decoration: none;
+            display: block;
+        }
 
 
+
+    .dropdown a {
+        text-decoration: none;
+        color: white;
+    }
+    .login a {
+        color: white;
+    }
+        .login a:hover {
+            color: white;
+        }
+</style>

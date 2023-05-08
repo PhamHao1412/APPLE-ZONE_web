@@ -1,4 +1,4 @@
-
+﻿
 /* ==========================================================================
    #FONT
    ========================================================================== */
@@ -196,37 +196,7 @@ fieldset, legend {
     padding: 0;
 }
 
-/**
- * Remove trailing margins from nested lists.
- */
-.navbar-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 30px;
-    padding-left: 10%;
-    padding-right: 10%;
-}
 
-nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 20px;
-}
-
-    nav ul li a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-        nav ul li a:hover {
-            color: #ea1538;
-            transition: .3s;
-        }
-/**
- * Remove default table spacing.
- */
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -748,6 +718,24 @@ input {
     color: #fff;
 }
 
+#Ten {
+    width: 230px;
+}
+
+
+.label--desc {
+    width: 100px;
+}
+
+.asc {
+    margin-left: -173px;
+}
+
+#ho {
+    width: 230px;
+    margin-left: -175px;
+}
+
 /* ==========================================================================
    #CARD
    ========================================================================== */
@@ -759,6 +747,7 @@ input {
 }
 
 .card-5 {
+    margin-top: 50px;
     background: #fff;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -790,38 +779,3 @@ input {
         padding-bottom: 50px;
     }
 }
-
-.nav_section {
-    margin-top: -32px;
-}
-
-    .nav_section .custom_nav2 .custom_nav-container {
-        padding: 10px 0;
-        background-color: #252525;
-        border-radius: 5px;
-    }
-
-        .nav_section .custom_nav2 .custom_nav-container .navbar-nav .nav-item .nav-link {
-            padding: 10px 30px;
-            color: #ffffff;
-            text-align: center;
-            position: relative;
-        }
-
-    .nav_section .custom_nav2 #navbarSupportedContent {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-
-    .nav_section .custom_nav-container .nav_search-btn {
-        background-image: url(../images/search-icon.png);
-        background-size: 18px;
-        background-repeat: no-repeat;
-        width: 35px;
-        height: 35px;
-        padding: 0;
-        border: none;
-        margin: 0 40px 0 15px;
-        background-position: center;
-    }
