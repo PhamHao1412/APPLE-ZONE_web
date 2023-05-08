@@ -1,6 +1,7 @@
 ﻿using Project.Models;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -9,8 +10,11 @@ namespace Project.Controllers
 {
     public class AdminController : Controller
     {
+       
         // GET: Admin
-      AppleDataDataContext db = new AppleDataDataContext();
+        AppleDataDataContext db = new AppleDataDataContext();
+   
+
         public ActionResult Index()
         {
             var all_user = from s in db.KhachHangs select s;
@@ -25,16 +29,46 @@ namespace Project.Controllers
         {
             return View();
         }
-        public ActionResult ThongKeDoanhThu()
+
+        public ActionResult ThongKeDoanhThu(DateTime? date)
         {
-            var query = from item in db.Items
-                        select new Revenue_Statistics
-                        {
-                            Id = item.ma,
-                            Name = item.ten,
-                            Total_Revenue = (long)(item.giaban * item.soluongton)
-                        };
-            ViewBag.Query = query;
+            // Truy vấn danh sách đơn hàng và chi tiết đơn hàng
+            var dhList = db.DonHangs.ToList();
+            var ctdhList = db.ChiTietDonHangs.ToList();
+
+            // Tạo danh sách doanh thu
+            var revenueList = (from ctdh in ctdhList
+                               join dh in dhList on ctdh.madon equals dh.madon
+                               where dh.ngaygiao != null // chỉ lấy các đơn hàng có ngày giao
+                               group ctdh by dh.ngaygiao into g
+                               select new RevenueStatistics
+                               {
+                                   NgayGiao = (DateTime)g.Key,
+                                   TongTien = (decimal)g.Sum(ctdh => ctdh.tongtien)
+                               }).ToList();
+
+            // Sắp xếp danh sách theo ngày
+            revenueList.Sort((x, y) => x.NgayGiao.CompareTo(y.NgayGiao));
+
+            // Lọc danh sách đơn hàng nếu người dùng chọn ngày
+            DateTime selectedDate = date ?? DateTime.Today;
+            dhList = dhList.Where(dh => dh.ngaygiao == selectedDate).ToList();
+
+            // Tính toán doanh thu cho danh sách đơn hàng
+            var selectedDateRevenue = (from ctdh in ctdhList
+                                       join dh in dhList on ctdh.madon equals dh.madon
+                                       group ctdh by dh.ngaygiao into g
+                                       select new RevenueStatistics
+                                       {
+                                           NgayGiao = (DateTime)g.Key,
+                                           TongTien = (decimal)g.Sum(ctdh => ctdh.tongtien)
+                                       }).FirstOrDefault();
+
+            // Trả về view hiển thị kết quả
+            ViewBag.RevenueStatistics = revenueList;
+            ViewBag.SelectedDate = date;
+            ViewBag.SelectedDateRevenue = selectedDateRevenue;
+
             return View();
         }
     }

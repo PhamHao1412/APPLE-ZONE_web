@@ -140,7 +140,7 @@
     </Compile>
     <Compile Include="Models\Giohang.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
-    <Compile Include="Models\Revenue_Statistics.cs" />
+    <Compile Include="Models\RevenueStatistics.cs" />
     <Compile Include="Models\Staff_Info.cs" />
     <Compile Include="Models\Store_Category.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

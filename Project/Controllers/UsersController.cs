@@ -78,11 +78,11 @@ namespace Project.Controllers
                 Session["ThongBao"] = "Chúc mừng đăng nhập thành công";
                 if (nv != null && nv.MaCV == 1)
                 {
-                    return RedirectToAction("QuanLyStaffAdmin", "UsersAdmin");
+                    return RedirectToAction("Index", "Admin");
                 }
                 else if (nv != null && nv.MaCV == 2)
                 {
-                    return RedirectToAction("Index", "Apples");
+                    return RedirectToAction("Index", "Admin");
                 }
                 else
                 {
